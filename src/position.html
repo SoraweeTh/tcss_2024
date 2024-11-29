@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-stone-800">
+    <div class="w-screen h-screen flex flex-col justify-center items-center">
+
+        <div class="flex flex-col items-center gap-y-10">
+
+            <!-- element 1 -->
+            <div class="relative">
+                <div class="bg-red-400 text-2xl rounded-sm p-6">parent element 1</div>
+                <div>
+                    <div class="absolute -left-10 bottom-14 bg-green-300 p-2 rounded-sm w-[150px]">child element 1</div>
+                </div>
+            </div>
+
+            <!-- element 2 -->
+            <div class="relative">
+                <div class="bg-black text-white text-2xl rounded-lg p-6">Mailbox</div>
+                <div>
+                    <div class="absolute -right-2 -top-4 bg-red-600 text-white px-2 rounded-full">7</div>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center w-full">
+                <div class="w-56 h-56">
+                    <img class="w-full h-full object-cover"
+                    src="https://cdn.pixabay.com/photo/2022/07/24/11/35/women-7341444_1280.jpg">
+                </div>
+                <span>Default image</span>
+            </div>
+
+            <div class="flex flex-col justify-center items-center w-full">
+                <div class="w-56 h-56">
+                    <img class="w-full h-full object-contain"
+                    src="https://cdn.pixabay.com/photo/2022/07/24/11/35/women-7341444_1280.jpg">
+                </div>
+                <span>Default image</span>
+            </div>
+
+            <div class="flex flex-col justify-center items-center w-full">
+                <div class="w-56 h-56">
+                    <img class="w-full h-full object-fill"
+                    src="https://cdn.pixabay.com/photo/2022/07/24/11/35/women-7341444_1280.jpg">
+                </div>
+                <span>Default image</span>
+            </div>
+
+            <nav class="bg-stone-900 text-gray-200 fixed top-0 left-0 
+            right-0 h-14 flex justify-between items-center px-5">
+                <button class="bg-gray-200 text-stone-950 p-2 rounded-md uppercase">logo</button>
+
+                <h1>Overview</h1>
+
+                <button class="bg-gray-200 text-stone-950 p-2 rounded-md uppercase">next</button>
+            </nav>
+
+            <aside class="bg-stone-900 text-gray-200 left-0 fixed top-0 bottom-0 w-20 mt-14">
+                <div class="px-2">sidebar</div>
+                <div>alsdlaksjd</div>
+            </aside>
+
+            <!-- <footer class="fixed bottom-0 inset-x-0 ml-20">
+                <div class="bg-stone-900 text-white text-3xl text-center py-5">footer</div>
+            </footer> -->
+        </div>
+        
+    </div>
+    
+</body>
+</html>
